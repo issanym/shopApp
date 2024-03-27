@@ -16,6 +16,7 @@ TARGET := $(BINDIR)/shop
 
 # Targets
 all: $(TARGET)
+	./$(TARGET)
 
 $(TARGET): $(OBJS)
 	@mkdir -p $(BINDIR)

@@ -10,7 +10,7 @@
 			{
 				"name": "Run",
 				"target": "terminus_exec",
-    				"cancel": "terminus_cancel_build",
+    			"cancel": "terminus_cancel_build",
 				"working_dir": "${project_path}",
 				"cmd": ["make"],
 				"selector": "source.c++",
