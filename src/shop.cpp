@@ -4,8 +4,12 @@
 #include <vector>
 #include <iomanip>
 #include "client.h"
+#include <cstdlib>
+#include <ctime>
 
 using namespace std;
+
+
 
 shop::shop() /* instanciate object and display inventory */
 {
@@ -21,7 +25,7 @@ shop::shop() /* instanciate object and display inventory */
 
 void shop::getInvoice(client& obj) /* generate invoice from cart */
 {
-    for(int i=0; i<obj.csize(); i++)
+    for(int i=0; i<obj.csize(); i++) // change obj to something else
     {
         usrItems.push_back(obj.getCart(i));
         cPrice.push_back(obj.price(i));
@@ -48,14 +52,18 @@ void shop::getInvoice(client& obj) /* generate invoice from cart */
 
 void shop::setPayment(client& obj) /* recieve total amnt and account num */
 {
+    srand(time(0));
+    obj.setWallet();
     if ( obj.getAccountNum() <= 847000000 && obj.getAccountNum() >839999999) // Acceptable values
     {
         if (obj.ctotal() > obj.getWallet())
         {
+            cout << obj.getWallet() << endl;
             cout << "Payment decline."<<endl;
         }
         else
         {
+            cout << obj.getWallet() << endl;
             cout<<"Thanks for shopping at the shop."<<endl;
         }
     }
@@ -78,7 +86,7 @@ std::string shop::getInventory(int index) /* return inventory */
 
 }
 
-double shop::getPrices(int index) /* return inventory */
+double shop::getPrices(int index) /* return inventory prices */
 {
 
     return prices[index];

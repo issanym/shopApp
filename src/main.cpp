@@ -22,5 +22,11 @@ int main()
 
     a.setPayment(b); // payment
 
+    /*
+     * ToDo
+     * - Rename the instances of client and shop to more intuitive names
+     * - Comment your damn code man it's always treasure hunting everytime i'm here
+    */
+
     return 0;
 }

@@ -6,6 +6,7 @@
 
 using namespace std;
 
+
 client::client(int accnum) /* instanciate object and se the user's account number */
 {
     accountNum = accnum;
@@ -55,17 +56,17 @@ void client::setCart(shop& obj) /* get the items and price from the user then pr
 //         || USER WILL NOT DIRECTLY INTERACT WITH THESE METHODS THEY'RE MENT FOR CLASS-TO-CLASS INTERACTION !!!!!!  ||
 //========================================================================================================================
 
-string client::getCart(int index)
+string client::getCart(int index) // It doesnt "get" the cart it "sends" it to shop
 {
     return cart[index];
 }
 
-double client::price(int index)
+double client::price(int index)  // see above method
 {
     return cartPrice[index];
 }
 
-double client::ctotal()
+double client::ctotal()  // see above method
 {
     return total;
 }
@@ -76,7 +77,7 @@ void client::setWallet() /* generate/retrive user's money */
     wallet = 5 + rand()%25;
 }
 
-double client::getWallet()
+double client::getWallet()  // method to be combined with the above method
 {
     return wallet;
 }
