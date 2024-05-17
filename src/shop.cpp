@@ -52,8 +52,6 @@ void shop::getInvoice(client& obj) /* generate invoice from cart */
 
 void shop::setPayment(client& obj) /* recieve total amnt and account num */
 {
-    srand(time(0));
-    obj.setWallet();
     if ( obj.getAccountNum() <= 847000000 && obj.getAccountNum() >839999999) // Acceptable values
     {
         if (obj.ctotal() > obj.getWallet())
