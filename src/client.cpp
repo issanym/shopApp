@@ -71,11 +71,6 @@ double client::ctotal()  // see above method
     return total;
 }
 
-void client::setWallet() /* generate/retrive user's money */
-{
-    ;
-}
-
 double client::getWallet()  // method to be combined with the above method
 {
     srand(time(0));

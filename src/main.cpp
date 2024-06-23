@@ -25,6 +25,7 @@ int main()
     /*
      * ToDo in v2
      * - divide shop and client into ore classes
+     * - payment to be handled by a separate class
     */
 
     return 0;

@@ -1,0 +1,56 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-std=c++14",
+      "-Wall",
+      "-Wextra",
+      "-O3",
+      "-I",
+      "headers",
+      "-c",
+      "-o",
+      "build/client.o",
+      "src/client.cpp"
+    ],
+    "directory": "/home/issajn/Documents/codehub/CPP new/ShopApp",
+    "file": "/home/issajn/Documents/codehub/CPP new/ShopApp/src/client.cpp",
+    "output": "/home/issajn/Documents/codehub/CPP new/ShopApp/build/client.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-std=c++14",
+      "-Wall",
+      "-Wextra",
+      "-O3",
+      "-I",
+      "headers",
+      "-c",
+      "-o",
+      "build/main.o",
+      "src/main.cpp"
+    ],
+    "directory": "/home/issajn/Documents/codehub/CPP new/ShopApp",
+    "file": "/home/issajn/Documents/codehub/CPP new/ShopApp/src/main.cpp",
+    "output": "/home/issajn/Documents/codehub/CPP new/ShopApp/build/main.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-std=c++14",
+      "-Wall",
+      "-Wextra",
+      "-O3",
+      "-I",
+      "headers",
+      "-c",
+      "-o",
+      "build/shop.o",
+      "src/shop.cpp"
+    ],
+    "directory": "/home/issajn/Documents/codehub/CPP new/ShopApp",
+    "file": "/home/issajn/Documents/codehub/CPP new/ShopApp/src/shop.cpp",
+    "output": "/home/issajn/Documents/codehub/CPP new/ShopApp/build/shop.o"
+  }
+]
