@@ -1,3 +1,4 @@
+#include <cstdlib>
 #include <iostream>
 #include "client.h"
 #include "shop.h"
@@ -27,6 +28,8 @@ int main()
      * - divide shop and client into ore classes
      * - payment to be handled by a separate class
     */
-
+    
+    cout << endl;
+    system("read -n 1 -s -p \"\"");
     return 0;
 }

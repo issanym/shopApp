@@ -56,7 +56,7 @@ void client::setCart(shop& obj) /* get the items and price from the user then pr
 //         || USER WILL NOT DIRECTLY INTERACT WITH THESE METHODS THEY'RE MENT FOR CLASS-TO-CLASS INTERACTION !!!!!!  ||
 //========================================================================================================================
 
-string client::getCart(int index) // It doesnt "get" the cart it "sends" it to shop
+string client::getCart(int index) // It doesnt "get" the cart, it "sends" it to shop
 {
     return cart[index];
 }
@@ -87,3 +87,5 @@ int client::getAccountNum()
 {
     return accountNum;
 }
+
+
